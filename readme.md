@@ -13,5 +13,5 @@ Copyright @Jayson 2015? I have no idea what to put here.
 ## Author
 ###Jayson Na (icy12ice)
 
-* Twitter: [@sanographix](https://twitter.com/icy12ice)
-* GitHub: [sanographix](https://github.com/icy12ice)
+* Twitter: [@icy12ice](https://twitter.com/icy12ice)
+* GitHub: [icy12ice](https://github.com/icy12ice)
