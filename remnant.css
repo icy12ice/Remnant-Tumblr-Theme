@@ -1,0 +1,323 @@
+/*
+    1. General CSS
+    2. Sidebar CSS
+    3. Header CSS
+    4. Grid CSS
+    5. Post Related CSS
+*/
+
+
+/*
+    1. General CSS
+*/
+
+
+/*
+    2. Sidebar CSS
+*/
+
+#sidebar {
+    width:20vw;
+    height: 100vh;
+    position:fixed;
+    float:left;
+    margin-top:-10px;
+    padding-bottom:20px;
+}
+
+.avatar-wrapper {
+    padding-top: 20vh;
+    margin-left: 4vw;
+}
+
+.user-avatar-circle {
+    border-style: solid;
+    border-radius:3px;
+    border-color: black;
+    border-radius:50%;
+}
+
+.user-avatar-square {
+}
+
+.handle {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom:10px;
+}
+
+.handle, .description, .section li {
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+.handle, .description {
+    text-shadow:
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+}
+
+.description {
+
+}
+
+.section {
+    margin-top: 4vh;
+    padding-left: 0px;
+    padding-right: 5vw;
+}
+
+.section li {
+    list-style-type: none;
+}
+
+/*
+    3. Header CSS
+*/
+
+.header-wrapper {
+    width: 75vw;
+    height: 200px;
+    margin-top: -10px;
+    float: right;
+    position:relative;
+    display:block;
+    background-repeat: no-repeat;
+}
+
+/*
+    4. Grid CSS
+*/
+
+#grid-wrapper {
+    display:block;
+    float: right;
+    position:relative;
+    width:70vw;
+    clear:both;
+}
+
+.grid {
+    max-width:1000px;
+}
+
+.grid-item {
+    width: 350px; 
+    height:auto;
+    margin-top:20px;
+    margin-right:5px;
+    /*
+    border-style: solid;
+    border-width: 2px;
+    */
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 9px;
+    background-color:#e9ecc6;
+    overflow:auto;
+}
+
+.grid-item img {
+    width:100%;
+    height: auto;
+}
+
+/*
+    Previous/Next Page CSS, mainly for infinite scroll
+*/
+#pagination {
+    max-height:50px;
+    max-width: 100px;
+}
+
+#footer {
+    visibility: hidden;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 30vw;
+    margin-left: 20vw;
+}
+
+.previous, .next {
+    font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+    font-size: 2em;
+}
+
+/*
+    5. Post Related CSS
+*/
+
+.title, .body-text, .caption, .post-content {
+    margin-left:15px;
+    margin-right: 10px;
+}
+
+/* clean up css */
+/* reblog/like css */
+.post-controls {
+    display:table-cell;
+    vertical-align:middle;
+    min-width: 80px;
+    text-align: right;
+    margin-right:10px;
+    float: right;
+}
+.post-controls .controls-wrapper {
+    text-align:right;
+    margin-right:20px
+}
+.post-controls .control {
+    display:inline-block;
+    height:28px;
+    position:relative;
+    text-align:left;
+    vertical-align:middle
+}
+.post-controls .control.share-control {
+    font-size:22px
+}
+.post-controls .control.share-control .share {
+    color:#a7a7a7;
+    display:block;
+    height:21px;
+    margin:2px auto auto;
+    text-decoration:none;
+    width:21px
+}
+.post-controls .control.share-control .share:hover {
+    color:#8c8c8c
+}
+.post-controls .reblog_button {
+    margin:3px 0 0 15px;
+    opacity:.355
+}
+.post-controls .reblog_button:hover {
+    opacity:.455
+}
+.post-controls .like_button {
+    display:block;
+    height:20px;
+    margin:3px 0 0 15px;
+    opacity:.355;
+    position:relative;
+    width:20px
+}
+.post-controls .like_button:hover {
+    opacity:.455
+}
+.post-controls .like_button.liked {
+    opacity:1
+}
+.post-controls .like_button.interacted.liked:after {
+    content:'\e601';
+    color:#d75f45;
+    font-family:optica-icons,
+    Blank;
+    font-size:70px;
+    height:40px;
+    width:40px;
+    -webkit-animation:wiggle .6s ease-out;
+    -o-animation:wiggle .6s ease-out;
+    -ms-animation:wiggle .6s ease-out;
+    -moz-animation:wiggle .6s ease-out;
+    animation:wiggle .6s ease-out;
+    position:absolute;
+    margin-top:-75px;
+    left:-26px;
+    z-index:0;
+    opacity:0;
+    speak:none;
+    -webkit-transform-origin:100% 100%;
+    -o-transform-origin:100% 100%;
+    -ms-transform-origin:100% 100%;
+    -moz-transform-origin:100% 100%;
+    transform-origin:100% 100%
+}
+
+.post-controls .like_button iframe {
+    position:relative;
+    z-index:1;
+    vertical-align:top;
+    -webkit-transform:translate(-1px);
+    -moz-transform:translate(-1px);
+    -ms-transform:translate(-1px);
+    -o-transform:translate(-1px);
+    transform:translate(-1px)
+}
+
+.post-extra, .date-note-wrapper, .reblog-link {
+    margin-left:15px;
+}
+
+.reblog-header {
+    font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+    margin:0;
+    font-size:18px;
+    color:#a7a7a7;
+    text-decoration:none;
+    margin: 10px 0px 10px 10px;
+}
+
+.reblog-header a {
+    color:#a7a7a7;
+    text-decoration:none;
+    padding: 0;
+}
+
+.reblog-header-wrapper {
+    display:inline-block;
+}
+
+.reblog-header-icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+.reblog-link {
+    margin-bottom:5px;
+}
+
+/*
+    Fixes other user's icons in reblog notes page
+*/
+.notes img {
+    width: initial;
+    height: initial;
+}
+
+.date-notes .post-notes {
+    font-weight:700
+}    
+
+.date-note-wrapper, date-notes {
+    display: inline;
+}  
+
+.post-extra {
+    font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+    font-size:14px
+}    
+
+.inline-meta {
+    display: inline;
+}
+
+.inline-meta .meta-item {
+    display:inline-block;
+    margin-right:10px;
+    color:#a7a7a7;
+    text-decoration:none;
+    line-height:1.2
+}    
+
+.body-text {
+    margin-left:15px;
+    margin-right:15px;
+}
